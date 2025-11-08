@@ -3,11 +3,9 @@
 // 브라우저의 쿠키를 자동으로 관리합니다.
 
 import { createBrowserClient } from '@supabase/ssr'
+import { SUPABASE_ANON_KEY, SUPABASE_URL } from './env'
 
 export function createClient() {
-  return createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  )
+  return createBrowserClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 }
 
