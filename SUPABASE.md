@@ -11,7 +11,7 @@
    Step 2: API 키 복사
    - Settings → API
    - Project URL 복사
-   - anon public key 복사
+   - anon public key 
 
 2. 환경 변수 설정
    
